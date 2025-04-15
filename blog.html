@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+<title>aboutwebsite</title>
+</head>
+<body>
+        
+  <nav class="navbar">
+    <ul class="sidebar">
+    <li onClick=hideSidebar()><a href="#"><img src="delete-sign.png" width="18px"  height="18px"></a></li>
+    <li> <a href="index.html">Home</a></li>
+    <li><a href="graphicsdesign.html">Portfolio</a></l1>
+      <li><a href="DevMichael.html">About Developer </a></li>
+    <li> <a href="blog.html"> Blog</a></li> 
+    </ul>
+  <ul>
+    <li><a href="blog.html">Noble Blog </a></li>
+    <li class="hideonMobile"> <a href="index.html">Home</a></li>
+    <li class="hideonMobile" ><a href="graphicsdesign.html">Portfolio</a></l1>
+      <li class="hideonMobile"><a href="DevMichael.html">About Developer </a></li>
+     <li class="hideonMobile"> <a href="blog.html"> Blog</a></li> 
+     <li class="menu-button" onclick=showSidebar()> <a href="#"><img src="menu.png" width="30px"  height="30px"></a></li>   
+</ul> 
+</nav> 
+<main>
+  <h1>Latest Blog Post</h1>
+<section class="container">
+  <div class="blog1">
+    <h1>Blog 1</h1><br>
+      <p>
+      5 Common Reasons Why Why Startup Business Fail In Nigeria<br>
+      (And How To Avoid Them)<br> Solomon Idowu Michael <br>
+      5/4/2025<br>
+      <button><a href="article1.html">Read</a></button>
+      </p>
+    </div><br>
+  
+    <div class="blog2">
+      <h1>Blog 2</h1>
+      <p>
+        Why Learning ICT Is Very Important In Today's Digital Age<br>Solomon Idowu Michael<br>
+        7/4/2025<br>
+        <button><a href="article2.html">Read</a></button>
+      </p>
+  </div><br>
+
+  <div class="blog3">
+    <h1>Blog 2</h1>
+    <p>
+      Why Learning ICT Is Very Important In Today's Digital Age<br>Solomon Idowu Michael<br>
+      7/4/2025<br>
+      <button><a href="article3.html">Read</a></button>
+    </p>
+</div> 
+<div class="facebook-widget-container">
+  <h2 class="widget-title">Follow Us on Facebook</h2>
+ 
+  <!-- Facebook Page Plugin -->
+  <div class="fb-page"
+       data-href="https://www.facebook.com/profile.php?id=100064186233095"
+       data-tabs="timeline"
+       data-width="230"
+       data-height="900"
+       data-small-header="false"
+       data-adapt-container-width="true"
+       data-hide-cover="false"
+       data-show-facepile="true">
+      <blockquote cite="https://www.facebook.com/profile.php?id=100064186233095"
+                  class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/profile.php?id=100064186233095">Noble Studio</a>
+      </blockquote>
+  </div>
+</div>
+  
+    <main>
+    <script>
+   
+
+
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+         const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+     </script>
+    <style>
+      .fb-page{
+        width: 320px;
+        height: 900px;
+      }
+        .facebook-widget-container {
+            max-width: 400px;
+            height: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #dddfe2;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .widget-title {
+            color: #1877f2;
+            font-family: Arial, sans-serif;
+            margin-bottom: 15px;
+        }
+      .blog1{
+        background-color: white;
+      }
+      .blog2{
+        background-color: white;
+      }
+      .blog3{
+        background-color: white;
+      }
+    body{
+        margin:0px;
+        background-color:#fffcfc;
+      }
+      main{
+        margin-left:20px;
+        margin-right:20px;
+      }
+      @media(max-width:800px){
+        .hideonMobile{
+          display:none;
+        }
+        .menu-button{
+          display:block;
+        }
+      }
+      @media(max-width: 400px){
+        .sidebar{
+          width:100%
+        }
+      }
+      .sidebar{
+        position: fixed;
+        top:0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color:  rgba(160, 147, 33, 0.979);
+        backdrop-filter: blur(10px);
+        display:none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .sidebar li{
+      width: 200;
+      }
+      .sidebar a{
+        width:100%;
+      }
+      button{
+        background-color: red;
+        color:white;
+        border-radius: 10px;
+        box-shadow: none;
+        height:30px;
+        border: none;
+        font: 1em sans-serif;
+        
+      }
+      a{
+        color:white;
+        text-decoration: none;
+        text-transform:green ;
+        transition: rgb(159, 196, 159);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight:50px;
+      }
+      a:hover{
+        color: rgb(189, 204, 133);
+      }
+      .card:hover{
+        background-color: rgba(31, 30, 30, 0.76);
+        color: white;
+        cursor: pointer;
+        transform: scale(1.03);
+        transform: all is ease;
+      }
+      
+      .container{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        background-colo: rgb(251, 250, 252);
+        background-attachment: scroll;
+        background-image: url(body_bg.jpg);
+        margin: 20px;
+    
+      }
+      .card-image{
+        display: flex;
+        justify-content: center;
+        margin-top:16px;
+        padding: 0px;
+        margin:10px; 
+        text-decoration: none; 
+      
+      }
+      .card:hover{
+        background-color: rgba(31, 30, 30, 0.76);
+        color: white;
+        cursor: pointer;
+        transform: scale(1.03);
+        transform: all is ease;
+        animation:backwards;
+      }
+      .card{
+        background-color: rgb(230, 225, 221);
+        width:270px;
+        height:550px;
+        margin:20px;
+        padding: 10px;
+        border-radiu: 17px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        box-shadow:5px 11px 11px rgba(107, 106, 105, 0.52);
+        text-align:center;
+       
+        
+      }
+      .container-2{
+        display:flex;
+        justify-content:center;
+      }
+      .logo{
+        color:rgb(214, 8, 8);
+      }
+      nav {
+        background-color: black;
+      }
+      .navbar ul{
+        list-style-type:none ;
+        background-color:   hsl(51, 90%, 50%);
+        padding:0%;
+        margin:0%;  
+        overflow:hidden;
+      }
+      .navbar a{
+      color:white;     
+      text-decoration:none;
+      padding:15px;
+      display: block;
+      text-align: center:
+      }
+      .navbar a:active{
+        color:yellow;
+      }
+     .navbar li{
+        float:left;
+        
+      }
+      .navbar li:first-child{
+        margin-right: auto;
+        
+      }
+      .navbar a:hover{
+        background-color:rgb(228, 175, 175);
+      }
+    
+      h1 {
+        text-align:center;
+      }
+      body{
+        margin: 0px;
+      }
+      main{
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      h1 {
+        color:rgb(68, 28, 212);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      h1 :hover{
+        color: white;
+      }
+      hr{
+        scroll-behavior: smooth;
+      }
+    </style>
+    <!-- Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0&appId=YOUR_APP_ID&autoLogAppEvents=1"
+        nonce="YOUR_NONCE_VALUE"></script>
+
+    </body>
+</html>
